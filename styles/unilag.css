@@ -1,0 +1,235 @@
+    body{
+    margin: 0 0 38em 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+  }
+  .container{
+    width: 25em;
+    padding: 10px;
+    position: relative;
+  }
+  .prepare{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: fixed;
+    background-color: whitesmoke;
+    z-index: 100;
+    top: 0;
+    margin-left: -10px;
+    padding: 15px;
+    width: 420px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .information{
+    margin-top: 38em;
+    background-color: rgb(185, 177, 185);
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid gray;
+    border-radius: .5em;
+
+   /* animation: moving 2s linear infinite;*/
+  }
+ /* @keyframes moving {
+    from,to{
+      transform: translate(0em);
+    }
+    50%{
+      transform: translate(.6em);
+    }
+  }*/
+  .myinfo{
+    color: rgb(11, 11, 235);
+    font-family:'Courier New', Courier, monospace;
+    margin-top:1em;
+    font-size: 14px;
+  }
+  .aty{
+    color: white;
+    font-size: 3em;
+    font-family: cursive;
+  }
+  .hundred{
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+  }
+  .semester{
+    color: darkred;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 15px;
+  }
+
+  .name{
+    font-size: 2em;
+    font-weight: bolder;
+    color: rgb(63, 62, 62);
+  }
+  .bag{
+    width: 8em;
+    height: 10em;
+    text-align: center;
+  }
+
+  .exercise{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  .exercise-link{
+    text-decoration: none;
+  }
+  .cell{
+    width: 6.7em;
+    height: 6.7em;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .cell img{
+    width: 50px;
+    height: 50px;
+  }
+  .cell-1,.cell-6{
+    background-color: rgba(0, 145, 255, 0.8);
+  }
+  .cell-3,.cell-4{
+    background-color: rgba(166, 0, 255, 0.8);
+  }
+  .cell-2{
+    background-color: rgba(230, 208, 154, 0.8);
+  }
+  .cell-5{
+    background-color: rgba(250, 5, 5, 0.959);
+  }
+  .cell button:first-child,
+  .cell button:nth-child(2),
+  .cell button:nth-child(3){
+    border: 2px solid white;
+    background-color: transparent;
+  }
+  .cell button:first-child{
+    height: 2.5em;
+  }
+  .cell button:nth-child(2){
+    height: 1.5em;
+  }
+  .cell button:nth-child(3){
+    height: 3.5em;
+  }
+
+  .general-info{
+    height: 15em;
+    margin-top: 30px;
+  }
+  .online-info{
+    margin-top: 10px;
+    background-color: white;
+    height: 15em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+  }
+  .circle{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: rgba(229, 255, 0, 0.6);
+    position: relative;
+  }
+  .circle div::after, .circle div::before{
+    content: '';
+    background-color: red;
+    width: 10px;
+    height: 60px;
+    position: absolute;
+  }
+  .circle div::after{
+    transform: rotate(35deg);
+    right: 3em;
+  }
+  .circle div::before{
+    transform: rotate(-33deg);
+    right: 1.2em;
+  }
+
+  .reload{
+    background-color: rgb(195, 62, 195);
+    color: white;
+    border: none;
+    padding: .5em;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .connect{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .special{
+    margin-top: 4em;
+  }
+  .footer{
+    position: fixed;
+    bottom: 0;
+    width: 420px;
+    margin-left: -10px;
+    background-color: white;
+    height: 4em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 6px;
+    cursor: pointer;
+    color: gray;
+  }
+  .home-icon{
+    width: 20px;
+    height: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home-icon.page{
+    border: 2px solid grey;
+    border-radius: 13px 13px 0 0;
+  }
+  .home.page .home-icon{
+    border: 2px solid rgb(195, 62, 195);
+  }
+  .dot{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: 2px solid grey;
+  }
+  .home.menu,.home.page{
+    color: rgb(195, 62, 195);
+  }
+  .home.menu .home-icon .dot{
+    border: 2px solid rgb(195, 62, 195);
+  }
+  .home-link{
+    text-decoration: none;
+  }
